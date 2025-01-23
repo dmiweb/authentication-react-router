@@ -44,12 +44,13 @@ const HomePage = (): JSX.Element => {
       </Header>
 
       <Main>
+        {loading && <div className='loading'>Loading...</div>}
         <div className='guest-page'>
           <h1 className='guest-page-title'>Neto Social</h1>
           <p className='guest-page-description'>Facebook and VK killer.</p>
         </div>
       </Main>
-      {loading && <div>Loading...</div>}
+      
     </>
 
   )
