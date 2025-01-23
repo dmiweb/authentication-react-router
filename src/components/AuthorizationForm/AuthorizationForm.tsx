@@ -29,7 +29,7 @@ const AuthorizationForm = ({ getDataForm }: AuthFormProps): JSX.Element => {
     <form className="authorization-form" onSubmit={handlerForm}>
       <Input type='text' name='login' placeholder='Username' value='vasya' />
       <Input type='password' name='password' placeholder='Password' value='password' />
-      <Button type='submit' className='button buttton-auth-submit' name='Login' />
+      <Button type='submit' className='auth-submit-btn' name='Login' />
     </form>
   );
 };
