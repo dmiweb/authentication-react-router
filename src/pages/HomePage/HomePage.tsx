@@ -37,8 +37,6 @@ const HomePage = (): JSX.Element => {
 
   return (
     <>
-      {loading && <div>Loading...</div>}
-      {error && <div>{error}</div>}
       <Header>
         <Logo />
         <AuthorizationForm getDataForm={getDataForm} />
@@ -51,6 +49,8 @@ const HomePage = (): JSX.Element => {
           <p className='guest-page-description'>Facebook and VK killer.</p>
         </div>
       </Main>
+      {loading && <div>Loading...</div>}
+      {error && <div>{error}</div>}
     </>
 
   )
