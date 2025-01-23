@@ -50,7 +50,6 @@ const HomePage = (): JSX.Element => {
         </div>
       </Main>
       {loading && <div>Loading...</div>}
-      {error && <div className='loading'>{error}</div>}
     </>
 
   )
